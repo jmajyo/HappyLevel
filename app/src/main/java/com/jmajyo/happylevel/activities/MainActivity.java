@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
     private Button saveButton;
 
-    private int state;
     private Entry mod;
 
     @Override
