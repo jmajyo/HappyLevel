@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.jmajyo.happylevel.activities.MainActivity">
+
+    <TextView
+        android:id="@+id/activity_main___text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Cómo te encuentras hoy?"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="#111111"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="100dp"/>
+
+    <ImageView
+        android:id="@+id/activity_main___sad_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/activity_main___text"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/sad_gray"/>
+    <ImageView
+        android:id="@+id/activity_main___neutral_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/activity_main___text"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/normal_gray"
+        />
+    <ImageView
+        android:id="@+id/activity_main___happy_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/activity_main___text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/happy_gray"/>
+
+    <Button
+        android:id="@+id/activity_main_save_button"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
